@@ -1064,9 +1064,9 @@ pre {
     max-width: 58.33333%; }
   .col-lg-8 {
     -webkit-box-flex: 0;
-    -ms-flex: 0 0 66.66667%;
-    flex: 0 0 66.66667%;
-    max-width: 66.66667%; }
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 100%; }
   .col-lg-9 {
     -webkit-box-flex: 0;
     -ms-flex: 0 0 75%;
@@ -8201,7 +8201,7 @@ h1, h2, h3, h4, h5,
     font-size: 16px;
     padding-top: .7rem;
     padding-bottom: .7rem;
-    padding-left: 20px;
+    padding-left: 15px;
     padding-right: 20px;
     color: #000000;
     font-weight: 400;
@@ -9765,4 +9765,13 @@ textarea.form-control {
 
 #introduce > p > strong {
   transition: 0.2s cubic-bezier(0.01, 0.3, 0.4, 2.35);
+}
+
+.project-link {
+  color: #1a73e8; /* 링크 색상 */
+  text-decoration:  underline; /* 밑줄 제거 */
+}
+
+.project-link:hover {
+  text-decoration: underline; /* 마우스를 올렸을 때 밑줄 추가 */
 }
