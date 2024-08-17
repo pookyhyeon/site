@@ -24,13 +24,74 @@
 	<link rel="stylesheet" href="css/icomoon.css">
 	<link rel="stylesheet" href="css/style.css">
 </head>
+<style type="text/css">
+	#introduce {
+		text-align: left;
+		width: 100%; /* Ensure introduce takes full width of its container */
+		margin: 0;
+		padding: 0;
+		box-sizing: border-box; 
+		line-height: 1.5em; /* Proper line-height for readability */
+		color: #000000; /* Default text color is black */
+	}
+	#introduce p {
+		text-align: left; /* Ensure text is left-aligned */
+		margin-bottom: 1em; /* Proper spacing between paragraphs */
+	}
+	
+	#introduce > p {
+		margin-bottom: 1em; /* Add some space between paragraphs */
+		max-height: none; /* Remove the max-height to avoid clipping */
+	}
+	
 
+	#introduce * {
+		-ms-overflow-style: none;
+		/* IE and Edge */
+		scrollbar-width: none;
+		/* Firefox */
+		/* disable dragging */
+		-webkit-user-select: none;
+		-moz-user-select: none;
+		-ms-user-select: none;
+		user-select: none
+	}
+
+
+	#introduce > p:hover > .emoji {
+		transform: scale(1.3);
+	}
+
+	#introduce > p > strong {
+		transition: 0.2s cubic-bezier(0.01, 0.3, 0.4, 2.35);
+	}
+
+	#introduce > p:hover > strong {
+		font-size: 1.1em;
+	}
+
+	/* Fixing emoji with different width*/
+	#introduce > p > .emoji {
+		transition: 0.2s cubic-bezier(0.01, 0.3, 0.4, 2.35);
+		display: inline-block;
+		width: 10px;
+		margin-right: 30px;
+	}
+
+	#introduce > p > strong {
+		background: linear-gradient(to right, #4D90FE, #8C39FF 90%);
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+	}
+
+	#introduce a {
+		text-decoration: none;
+	}
+</style>
 <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
-
-
 	<nav class="navbar navbar-expand-lg navbar-dark ftco_navbar ftco-navbar-light site-navbar-target" id="ftco-navbar">
 		<div class="container">
-			<a class="navbar-brand" href="index.html"><span>Y</span>eom Jeong Hyeon</a>
+			<a class="navbar-brand" href="index.html"><span>S</span>in Wave</a>
 			<button class="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle" type="button" data-toggle="collapse"
 				data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
 				<span class="oi oi-menu"></span> Menu
@@ -50,28 +111,23 @@
 			</div>
 		</div>
 	</nav>
-	<section class="hero-wrap js-fullheight">
+	<section class="hero-wrap js-fullheight" style="background-image: url(images/ocean.jpg);">
 		<div class="overlay"></div>
 		<div class="container">
 			<div class="row no-gutters slider-text js-fullheight justify-content-center align-items-center">
 				<div class="col-lg-8 col-md-6 ftco-animate d-flex align-items-center">
 					<div class="text text-center">
-						<span class="subheading1 highlight-text">electrical &amp; electronic engineer</span>
-						<h1>염정현🌱</h1>
-						<h2>
-							<span class="txt-rotate" data-period="500"
-								data-rotate='[  "행운은 결단과 실행력을 가진 용기 있는 자를 선호한다."]'></span>
-						</h2>
+						<h1 style="color: #FFFFFF; font-size: 60px;">염정현</h1>
 					</div>
 				</div>
 			</div>
 		</div>
-		</div>
-		<div class="mouse">
-			<a href="#" class="mouse-icon">
-				<div class="mouse-wheel"><span class="ion-ios-arrow-round-down"></span></div>
-			</a>
-		</div>
+	
+	
+	  </section>
+	  
+	  
+
 	</section>
 
 	<section class="ftco-about img ftco-section ftco-no-pt ftco-no-pb" id="about-section">
@@ -90,17 +146,47 @@
     <div class="col-md-12 heading-section ftco-animate">
         <h1 class="big normal-text">About</h1>
         <h2 class="mb-4 normal-text">About Me</h2>
-        <p class="normal-text"> 새로운 도전을 즐기고 🌱광합성과 🧊☕아이스아메리카노와 함께라면 두려울게 없는 공대생입니다. </p>
-        <ul class="about-info mt-4 px-md-0 px-2">
-            <li class="d-flex normal-text"><span>Name:</span> <span>염정현 </span></li>
-            <li class="d-flex normal-text"><span>Address:</span> <span>경기도 성남시 분당구 서현동 </span></li>
-            <li class="d-flex normal-text"><span>Email:</span> <span>pkyhyeon99@gmail.com</span></li>
-            <li class="d-flex normal-text"><span>Phone: </span> <span>+82-10-4455-1835</span></li>
-        </ul>
-    </div>
-</div>
+				<div id="introduce">
+					<p>
+						<span class="emoji">🙋🏻‍♂️</span>
+						새로운 도전을 즐기고 매사 긍정적인 <strong> 염정현</strong> 입니다. <br> 
+					</p>
+					<p>
+						<span class="emoji">🌱</span>
+						 <strong> 광합성 </strong>
+						 과 <strong>산책</strong>이 에너지의 원천입니다. <br>
+					</p>
+					<p>
+						<span class="emoji">🧊</span>
+						<strong>아이스 아메리카노</strong>
+						를 사계절 내내 매일 마십니다.<br>
+					</p>
+					<p>
+						<span class="emoji">👨🏻‍💻</span>
+						<strong> 전기전자공학부 </strong>
+						를 전공하고 있습니다.
+					</p>
+					<p>
+						<span class="emoji">📖</span>
+						<strong>독서와 글쓰기</strong>
+						를 좋아합니다.
+					</p>
+					<p>
+						<span class="emoji">🏔️</span>
+						<strong>등산과 자전거</strong>
+						를 좋아합니다.
+					</p>
+					<p>
+						<span class="emoji">💬</span>
+						아래 <strong>설명</strong>
+						에서 저의 프로젝트를 만나보세요!
+					</p>
+					<p>
+						<br> <br>
+행운은 <Strong> 결단과 실행력을 </Strong> 가진 용기 있는 자를 선호한다.  
+					</p>
 
-					</div>
+					</div>		
 					<div class="counter-wrap ftco-animate d-flex mt-md-3">
 						<div class="text">
 							<p class="mb-4">
@@ -145,7 +231,23 @@
 		</div>
 	</section>
 
+    <style>
+        /* 새 스타일 정의 */
+        .new-text {
+            padding-left: 1.5rem;
+            letter-spacing: 0.05em;
+            color: #828080;
+        }
 
+        .new-heading {
+            font-size: 1.5em;
+            color: #4CAF50;
+        }
+        .new-date {
+            font-style: italic;
+        }
+
+    </style>
 	<section class="ftco-section ftco-no-pb goto-here" id="resume-section">
 		<div class="container">
 			<div class="row">
@@ -161,17 +263,24 @@
 				</div>
 				<div class="col-md-9" id="experience-section">
 					<div id="page-1" class="page one">
-						<h2 class="heading">Experience</h2>
+						<h2 class="heading new-heading">Experience</h2>
 						<div class="resume-wrap d-flex ftco-animate">
-							<div class="icon d-flex align-items-center justify-content-center">
+							<div class="icon d-flex align-items-center justify-content-center new-icon">
 								<span class="flaticon-ideas"></span>
 							</div>
-							<div class="text pl-3">
-								<span class="date">2019-2025 </span>
-								<h2>전기전자공학부 전공 </h2>
-								<span class="position">Konkuk University</span>
-								<p>  전기공학과 전자공학에서 다양한 분야를 공부하고 지식을 쌓았습니다<div class=""></div></p>
-								<p> - KU 학생 성장 장학: 교과와 비교과를 종합적으로 심사하여 선정  </p>
+							<div class="text new-text">
+								<span class="date new-date">2019-2025</span>
+								<h2>Major in Electrical and Electronic Engineering</h2>
+								<span class="position new-position">Konkuk University</span>
+								<p>전기공학과 전자공학에서 다양한 분야를 공부하고 지식을 쌓았습니다<br>
+								(장학) KU 학생 성장 장학 선정 : 교내 장학으로 교과와 비교과를 종합적으로 심사하여 선정<br>
+								(장학) 쿨하우스 장학금 선정 : 교내 장학으로 자기소개서를 통해 선정<br>
+								(장학) 서울시 장학금 선정 : 교외 장학으로 자기소개서를 통해 선정<br>
+								(동아리) 건국대학교 유도동아리 청백<br>
+								(동아리) 건국대학교 전기전자공학부 학술동아리 DECA<br>
+								(동아리) 건국대학교 기계공학부 학술동아리 돌밭 <br>
+								(스터디) 공과대학 알고리즘 스터디 
+							</p>
 							</div>
 						</div>
 						<div class="resume-wrap d-flex ftco-animate">
@@ -181,8 +290,8 @@
 							<div class="text pl-3">
 								<span class="date">2021-2022</span>
 								<h2>Military service in the army </h2>
-								<span class="position">ROKA</span>
-								<p>629 포병대대에서 통신병으로 국방의 의무를 수행했습니다. K9 자주포의 사격을 지휘하는 사격지휘병과 PX 관리병, 의무대리인, 화학병등 다양한 직책을 동시에 수행하며 인정받았습니다. </p>
+								<span class="position">Republic Of Korea Army </span>
+								<p>경기도 파주 629 포병대대에서 통신병으로 국방의 의무를 수행.<br> K9 자주포의 사격을 지휘하는 사격지휘병과 PX 관리병, 의무대리인, 화학병등 다양한 직책을 동시에 수행. </p>
 							</div>
 						</div>
 
@@ -192,8 +301,8 @@
 							</div>
 							<div class="text pl-3">
 								<span class="date">2023.07~08</span>
-								<h2>  quantumn novel Lab graduated intern </h2>
-								<span class="position">DGIST </span>
+								<h2>  quantumn novel Lab graduate intern </h2>
+								<span class="position"> Daegu Gyeongbuk Institute of Science and Technology </span>
 								<p> 스핀트로닉스 입자 성질을 가진 FeGaTe 합성 실험, 전자기적 특징을 분석. </p>
 							</div>
 						</div>
@@ -204,9 +313,9 @@
 							</div>
 							<div class="text pl-3">
 								<span class="date">2023.09 ~2024. 03 </span>
-								<h2>  KOPEL 학부 연구생 </h2>
+								<h2> Lab KOPEL graduate intern </h2>
 								<span class="position">Konkuk university  </span>
-								<p> 전력전자 연구실에서 학부연구생으로 있으면서 연구실의 일 보조 </p>
+								<p> 전력전자 연구실에서 학부연구생으로 연구실 업무 보조 </p>
 							</div>
 						</div>
 
@@ -216,7 +325,7 @@
 							</div>
 							<div class="text pl-3">
 								<span class="date">2024.01-02</span>
-								<h2> 미래자동차형 모듈 기업 인턴 </h2>
+								<h2> An intern at a future car-type track company on campus </h2>
 								<span class="position">Enerpowertech</span>
 								<p> microprocessor 과 BLDC motor 을 이용해 sensorless 방식 연구 </p>
 							</div>
@@ -333,7 +442,7 @@
 							<div class="text pl-3">
 								<span class="date">2024 09</span>
 								<h2>ADSP</h2>
-								<span class="position">D</span>
+								<span class="position"> advanced data Analytic semi-Professional license</span>
 							</div>
 						</div>
 					
@@ -372,7 +481,7 @@
 								<span class="date">2023.11</span>
 								<h2>2023 한양대학교 컨소시엄 창의적 종합설계 경진대회</h2>
 								<span class="position">장려상 ( 한양대학교 공학교육혁신센터상) </span>
-								<p>한양대학교 컨소시엄 어쩌고 저쩌꼬 </p>
+								<p>한양대학교 컨소시엄 연합대회에서 수상  </p>
 							</div>
 						</div>									
 						<div class="resume-wrap d-flex ftco-animate align-items-start" style="align-items: flex-start;">
@@ -383,7 +492,7 @@
 								<span class="date">2023.07</span>
 								<h2>2023 KU SW 경진대회 </h2>
 								<span class="position">심사위원 특별상 </span>
-								<p> SW 경진대회에서 어쩌고 ㅓ저ㅉ꼬 </p>
+								<p> SW 경진대회에서 수상 유일 비졸업자 수상팀  </p>
 							</div>
 						</div>									
 						<div class="resume-wrap d-flex ftco-animate align-items-start" style="align-items: flex-start;">
@@ -394,7 +503,7 @@
 								<span class="date">2024.01</span>
 								<h2>2024 진로 포트폴리오 대회</h2>
 								<span class="position">우수상 </span>
-								<p>스마트 그리드 환경 아래 전기충전기 안전 관련 제도 다각화</p>
+								<p>전기기기 및 인공지능 전문가로 진로 성장 제시  </p>
 							</div>
 						</div>									
 						
@@ -412,68 +521,38 @@
 				<div class="col-md-12 heading-section text-center ftco-animate">
 					<h1 class="big big-2">license </h1>
 					<h2 id="side-projects-section" class="mb-4">more of me </h2>
-					<p> 취미와 선호, 흥미 분야는 저에게 있어 중요한 요소 입니다. </p>
+					<p> 취미와 선호, 흥미 분야 </p>
 				</div>
 			</div>
 			<div class="row no-gutters">
 				<div class="col-md-4">
 					<div class="project img ftco-animate d-flex justify-content-center align-items-center"
-						style="background-image: url(images/side-project-1.png);">
+						style="background-image: url(images/flowr.jpg);">
 						<div class="overlay"></div>
 						<div class="text text-center p-4">
-							<h3><a target="_blank" href="https://qpi.kr/">  등산 </a></h3>
-							<span>아직 초보지만, 서울에 있는 산을 완등하는 게 제 목표입니다. </span>
+							<h3><a target="_blank" href="images/flowr.jpg"> 사진과 여행  </a></h3>
+							<span> 전국 곳곳을 돌아다니며, 자연물을 위주로 사진찍는 것과 동네를 구경하며 맛있는 음식을 먹는 것을 좋아합니다. </span>
 						</div>
 					</div>
 				</div>
 				<div class="col-md-4">
 					<div class="project img ftco-animate d-flex justify-content-center align-items-center"
-						style="background-image: url(images/work-1.jpg);">
+						style="background-image: url(images/work-1.png);">
 						<div class="overlay"></div>
 						<div class="text text-center p-4">
 							<h3><a href="#"> 글쓰기 </a></h3>
-							<span>< 강릉은 모두 작가다> 도서에 제가 쓴 글이 실렸습니다. 글을 쓰는 것을 좋아합니다. </span>
+							<span>< 강릉은 모두 작가다> 도서에 제가 쓴 글이 실렸습니다. 글을 쓰는 것을 좋아해서 다양한 플랫폼에 저의 글을 씁니다.</span>
 						</div>
 					</div>
 				</div>
 
 				<div class="col-md-4">
 					<div class="project img ftco-animate d-flex justify-content-center align-items-center"
-						style="background-image: url(images/work-3.jpg);">
+						style="background-image: url(images/mount.jpg);">
 						<div class="overlay"></div>
 						<div class="text text-center p-4">
-							<h3><a href="#"> 국내 여행 </a></h3>
-							<span>국내 곳곳을 여행다니는 것을 좋아합니다. </span>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-4">
-					<div class="project img ftco-animate d-flex justify-content-center align-items-center"
-						style="background-image: url(images/work-4.jpg);">
-						<div class="overlay"></div>
-						<div class="text text-center p-4">
-							<h3><a href="#">Learning new language </a></h3>
-							<span>HSK 5급을 목표로 공부하고 있습니다. </span>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-4">
-					<div class="project img ftco-animate d-flex justify-content-center align-items-center"
-						style="background-image: url(images/work-5.jpg);">
-						<div class="overlay"></div>
-						<div class="text text-center p-4">
-							<h3><a href="#">Branding &amp; Illustration Design</a></h3>
-							<span>Web Design</span>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-4">
-					<div class="project img ftco-animate d-flex justify-content-center align-items-center"
-						style="background-image: url(images/work-6.jpg);">
-						<div class="overlay"></div>
-						<div class="text text-center p-4">
-							<h3><a href="#">Branding &amp; Illustration Design</a></h3>
-							<span>Web Design</span>
+							<h3><a href="#"> 등산과 자전거 </a></h3>
+							<span> 국내에 있는 산을 등산하거나, 자전거를 타며 마을을 돌아다니는 것을 좋아합니다.  </span>
 						</div>
 					</div>
 				</div>
@@ -638,8 +717,8 @@
 						<h3>Chinese</h3>
 						<div class="progress">
 							<div class="progress-bar color-7" role="progressbar" aria-valuenow="80"
-								aria-valuemin="0" aria-valuemax="100" style="width:80%">
-								<span>80%</span>
+								aria-valuemin="0" aria-valuemax="100" style="width:50%">
+								<span>50%</span>
 							</div>
 						</div>
 					</div>
@@ -649,8 +728,8 @@
 						<h3>French</h3>
 						<div class="progress">
 							<div class="progress-bar color-7" role="progressbar" aria-valuenow="80"
-								aria-valuemin="0" aria-valuemax="100" style="width:80%">
-								<span>80%</span>
+								aria-valuemin="0" aria-valuemax="100" style="width:30%">
+								<span>30%</span>
 							</div>
 						</div>
 					</div>
@@ -664,7 +743,7 @@
 			<div class="row justify-content-center">
 				<div class="col-md-7 ftco-animate text-center">
 					<h2>함께할 <span>팀원을 찾는 중</span> 입니다.</h2>
-					<p>위와 같은 프로젝트나, 새로운 아이디어를 구현해보고 싶은 분은 전공과 상관없이 언제든지 환영입니다.</p>
+					<p>위와 같은 비슷한 프로젝트나, 새로운 아이디어를 구현해보고 싶은 분과 같이 일해보고 싶습니다. </p>
 					<p class="mb-0"><a href="#" class="btn btn-primary py-3 px-5">연락주세요.</a></p>
 				</div>
 			</div>
@@ -677,7 +756,7 @@
 				<div class="col-md-7 heading-section text-center ftco-animate">
 					<h1 class="big big-2">Contact</h1>
 					<h2 class="mb-4">Contact Me</h2>
-					<p>새로운 아이디어가 늘 번뜩이며 그에 걸맞게 기술력을 갖춘 공학자가 되겠습니다. 연락주세요.</p>
+					<p>새로운 아이디어가 늘 번뜩이며 그에 걸맞게 기술력을 갖춘 공학자가 되겠습니다. <br>
 				</div>
 			</div>
 
@@ -742,7 +821,7 @@
 						Copyright &copy;
 						<script>document.write(new Date().getFullYear());</script> All rights reserved | This template
 						is made with <i class="icon-heart color-danger" aria-hidden="true"></i> by <a
-							href="https://colorlib.com" target="_blank">Colorlib</a>
+							 target="_blank">Colorlib</a>
 						<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
 					</p>
 				</div>
