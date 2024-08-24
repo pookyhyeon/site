@@ -8707,7 +8707,7 @@ h1, h2, h3, h4, h5,
 
 .page {
   width: 100%;
-  margin-bottom: 7em; }
+  margin-bottom: 1em; }
   .page.four {
     margin-bottom: 0; }
   .page .heading {
@@ -9688,12 +9688,11 @@ textarea.form-control {
     stroke-dasharray: 89, 200;
     stroke-dashoffset: -136px; } }
 #page-3 {
-      padding: 20px; /* 상하 좌우 여백 조정 */
+
   }
   
 .heading {
       font-size: 2rem;
-      margin-bottom: 20px;
   }
   
   .image-container {
@@ -9701,7 +9700,7 @@ textarea.form-control {
     justify-content: center; /* 이미지 중앙 정렬 */
     align-items: center;
     height: 400px; /* 이미지 컨테이너의 높이 조정 */
-    width: 100%; /* 이미지 컨테이너의 너비 조정 */
+    width: 120%; /* 이미지 컨테이너의 너비 조정 */
     overflow: hidden; /* 이미지가 컨테이너를 넘을 경우 숨기기 */
 }
 
@@ -9713,6 +9712,7 @@ textarea.form-control {
   height: auto; /* 비율을 유지하며 높이를 자동 조정 */
   border: 1px solid #ddd; /* 선택 사항: 이미지 테두리 추가 */
   border-radius: 8px; /* 선택 사항: 이미지 모서리 둥글게 */
+  margin-bottom: 0px;
 }
 
 /* 초록색 진행 바 스타일 추가 */
