@@ -9088,11 +9088,10 @@ textarea.form-control {
 
       
 .ftco-section2 {
-  padding: 1em 0;
-  position: relative; }
-  @media (max-width: 767.98px) {
-    .ftco-section {
-      padding: 6em 0; } }
+  padding-top: 9em;
+  /* 아래쪽 패딩을 제거하고 싶다면 padding-bottom을 0으로 설정 */
+  padding-bottom: 1em;
+  position: relative}
 .ftco-no-pt {
   padding-top: 0 !important; }
 
