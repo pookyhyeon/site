@@ -448,6 +448,16 @@ pre {
 .pre-scrollable {
   max-height: 340px;
   overflow-y: scroll; }
+  @media (max-width: 768px) {
+    .hero-wrap h1 {
+        font-size: 36px; /* 작은 화면에서 폰트 크기를 줄입니다 */
+    }
+}
+@media (max-width: 576px) {
+    .hero-wrap h1 {
+        font-size: 28px; /* 더 작은 화면에서는 폰트 크기를 더 줄입니다 */
+    }
+}
 
 .container {
   width: 100%;
