@@ -914,9 +914,9 @@ pre {
     max-width: 66.66667%; }
   .col-md-9 {
     -webkit-box-flex: 0;
-    -ms-flex: 0 0 75%;
-    flex: 0 0 75%;
-    max-width: 75%; }
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 100%; }
   .col-md-10 {
     -webkit-box-flex: 0;
     -ms-flex: 0 0 83.33333%;
@@ -4884,7 +4884,15 @@ a.close.disabled {
 @media (min-width: 1200px) {
   .modal-xl {
     max-width: 1140px; } }
-
+@media (max-width: 768px) {
+      #ftco-nav {
+        text-align: center;
+      }
+      #ftco-nav .navbar-nav {
+        display: inline-block;
+        float: none;
+      }
+    }
 .tooltip {
   position: absolute;
   z-index: 1070;
@@ -8642,17 +8650,44 @@ h1, h2, h3, h4, h5,
         background: #3e64ff;
         color: #fff; }
 
-.ftco-about .img-about {
-  width: 100%;
-  height: 80vh;
-  z-index: 0;
-  position: relative; }
-  .ftco-about .img-about .img {
-    display: block;
-    width: 100%;
-    position: relative;
-    z-index: 1; }
-
+        .ftco-about .img-about {
+          width: 100%;
+          height: 80vh;
+          z-index: 0;
+          position: relative;
+      }
+      
+      .ftco-about .img-about .img {
+          display: block;
+          width: 100%; /* Maintain full container width */
+          height: 80%; /* Maintain full container height */
+          position: relative;
+          z-index: 1;
+          margin-top: 20px; /* Adds top margin */
+      
+          /* Scale down the image while keeping its proportions */
+          transform: scale(0.8); /* Adjust the scale factor as needed */
+          transform-origin: center;
+      }
+      @media (max-width: 768px) {
+        .col-md-6.col-lg-6.pl-md-5.py-5 {
+            text-align: center; /* Centers all text inside the div */
+            padding-left: 0; /* Removes padding for a cleaner mobile view */
+            padding-right: 0; /* Optional: Ensure full width on mobile */
+        }
+    
+        #introduce p,
+        #introduce div,
+        .heading-section h1,
+        .heading-section h2 {
+            text-align: center; /* Centers all headings and paragraphs */
+        }
+    
+        #introduce .btn {
+            margin: 10px 0; /* Adds some spacing around buttons */
+        }
+    }
+        
 .ftco-about ul.about-info {
   display: inline-block;
   padding: 0;
@@ -8709,6 +8744,13 @@ h1, h2, h3, h4, h5,
           transform: translateY(-50%);
           background: #3e64ff; }
 
+          
+@media (max-width: 768px) {
+            #navi {
+                display: none;
+            }
+        }
+        
 .page {
   width: 100%;
   margin-bottom: 1em; }
@@ -8760,7 +8802,19 @@ h1, h2, h3, h4, h5,
       .ftco-partner .partner {
         padding: 0 70px;
         margin-bottom: 40px; } }
+        .new-text {
+          padding-left: 1.5rem;
+          letter-spacing: 0.05em;
+          color: #282828;
+      }
 
+      .new-heading {
+          font-size: 1.5em;
+          color: #4CAF50;
+      }
+      .new-date {
+          font-style: italic;
+      }
 .services-1 {
   margin-bottom: 40px;
   padding: 2em;
@@ -8929,7 +8983,6 @@ h1, h2, h3, h4, h5,
   left: 0; }
 
 .ftco-hireme {
-  background: #3e64ff;
   z-index: 0;
   position: relative; }
   .ftco-hireme .overlay {
@@ -8939,7 +8992,6 @@ h1, h2, h3, h4, h5,
     right: 0;
     bottom: 0;
     content: '';
-    background: #3e64ff;
     opacity: .7; }
   .ftco-hireme h2 {
     color: #fff;
@@ -9078,9 +9130,22 @@ textarea.form-control {
   border-radius: 5px; }
   .about-author .desc h3 {
     font-size: 24px; }
+/* Display line break on large screens */
+@media (min-width: 992px) {
+  .title-break {
+      display: block; /* Acts as a line break */
+  }
+}
+
+/* Keep inline on smaller screens */
+@media (max-width: 991px) {
+  .title-break {
+      display: inline; /* Keeps text on the same line */
+  }
+}
 
 .ftco-section {
-  padding: 7em 0;
+  padding: 3em 0;
   position: relative; }
   @media (max-width: 767.98px) {
     .ftco-section {
