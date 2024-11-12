@@ -8168,7 +8168,12 @@ body {
     position: fixed;
     height: 100%;
     width: 100%; }
-
+@media only screen and (max-width: 768px) {
+      .hero-wrap h1 {
+          font-size: 36px; /* Adjust this size as needed */
+      }
+  }
+  
 a {
   -webkit-transition: .3s all ease;
   -o-transition: .3s all ease;
